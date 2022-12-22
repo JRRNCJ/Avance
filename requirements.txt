@@ -1,4 +1,3 @@
 numpy
 pandas
-PIL
-matplotlib,pyplot
+matplotlib
