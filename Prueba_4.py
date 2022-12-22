@@ -3,9 +3,6 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 import math
-import matplotlib.pyplot as plt
-from matplotlib.path import Path
-import matplotlib.patches as patches
 
 #Título
 st.title('DISEÑO DE NÚMERO DE CONECTORES DE CORTES')
@@ -53,6 +50,9 @@ fc=st.selectbox("Seleccione un resistencia a compresión del concreto: f'c(kg/cm
 Qn=round(0.5*(Dia*2.54)**2/4*3.1416*((fc*0.0981)*0.043*2400**1.5*(fc*0.0981)**0.5)**0.5/98.1,2)
 st.metric('Qn(t):',Qn)
 
+import matplotlib.pyplot as plt
+from matplotlib.path import Path
+import matplotlib.patches as patches
 
 #Propiedades de viga de apoyo
 st.header("Propiedades de Viga de Apoyo")
